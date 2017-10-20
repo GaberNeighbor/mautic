@@ -1,0 +1,19 @@
+#notification-preview .panel-body span {
+  color: rgba(0, 0, 0, 0.5);
+}
+#notification-preview .panel-body span.fa {
+  line-height: 64px;
+  opacity: 0.5;
+}
+#notification-preview .panel-body h4 {
+  margin-bottom: 5px;
+}
+#notification-preview .panel-body .icon {
+  width: 100px;
+  height: 80px;
+  float: left;
+}
+#notification-preview .panel-body .text {
+  width: calc(100% - 120px);
+  float: left;
+}
