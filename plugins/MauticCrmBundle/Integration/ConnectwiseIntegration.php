@@ -261,7 +261,7 @@ class ConnectwiseIntegration extends CrmAbstractIntegration
         $cwFields = [];
 
         foreach ($fields as $fieldName => $field) {
-            if ($field['type'] == 'string' || $field['type'] == 'boolean' || $field['type'] == 'ref') {
+            if (in_array($field['type'], ['string', 'boolean', 'ref'])) {
                 $cwFields[$fieldName] = [
                     'type'     => $field['type'],
                     'label'    => ucfirst($fieldName),
@@ -338,7 +338,6 @@ class ConnectwiseIntegration extends CrmAbstractIntegration
                             'helper' => $this->factory->getHelper('integration'),
                             'attr'   => [
                                 'data-hide-on' => '{"campaignevent_properties_config_push_activities_0":"checked"}',
-
                             ],
                             'data' => (isset($data['campaign_task'])) ? $data['campaign_task'] : [],
                         ]);
@@ -435,12 +434,16 @@ class ConnectwiseIntegration extends CrmAbstractIntegration
             'communicationItems'     => [
                 'type'     => 'array',
                 'required' => false,
-                'items'    => ['name' => ['type' => 'name'], 'value' => 'value', 'keys' => ['Email', 'Direct', 'Fax', 'Cell']],
+                'items'    => [
+                    'name'  => ['type' => 'name'],
+                    'value' => 'value',
+                    'keys'  => ['Email', 'Direct', 'Fax', 'Cell'],
+                ],
             ],
-            'Direct' => ['type' => 'string', 'required' => false, 'configOnly' => true],
-            'Cell'   => ['type' => 'string', 'required' => false, 'configOnly' => true],
-            'Email'  => ['type' => 'string', 'required' => true, 'configOnly' => true],
-            'Fax'    => ['type' => 'string', 'required' => false, 'configOnly' => true],
+            'Direct'                 => ['type' => 'string', 'required' => false, 'configOnly' => true],
+            'Cell'                   => ['type' => 'string', 'required' => false, 'configOnly' => true],
+            'Email'                  => ['type' => 'string', 'required' => true, 'configOnly' => true],
+            'Fax'                    => ['type' => 'string', 'required' => false, 'configOnly' => true],
         ];
     }
 
@@ -690,7 +693,6 @@ class ConnectwiseIntegration extends CrmAbstractIntegration
 
         $leadFields = array_diff_key($leadFields, array_flip($fieldsToUpdateInCW));
         $leadFields = $this->getBlankFieldsToUpdate($leadFields, $cwContactExists, $objectFields, $config);
-        //check for blank fields to update here
         $mappedData = $this->populateLeadData(
             $lead,
             [
@@ -703,6 +705,9 @@ class ConnectwiseIntegration extends CrmAbstractIntegration
                 'communicationItems' => $communicationItems,
             ]
         );
+
+        // @todo map company reference
+        unset($mappedData['company']);
 
         return $mappedData;
     }
@@ -719,10 +724,8 @@ class ConnectwiseIntegration extends CrmAbstractIntegration
     {
         if ($lead instanceof Lead) {
             $fields = $lead->getFields(true);
-            $leadId = $lead->getId();
         } else {
             $fields = $lead;
-            $leadId = $lead['id'];
         }
 
         $leadFields = $config['leadFields'];
@@ -995,6 +998,7 @@ class ConnectwiseIntegration extends CrmAbstractIntegration
 
         return $recordList;
     }
+
     /**
      * @return array
      */
