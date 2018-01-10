@@ -1,0 +1,164 @@
+{% extends ":"~template~":base.html.twig" %}
+{% block content %}
+<header data-section-wrapper="1" id="top">
+  <div data-section="1">
+    <div class="container" data-slot-container="1">
+      <div data-slot="text">
+        <img class="logo" src="{{getAssetUrl('themes/'~template~'/assets/logo_amp-live.svg')}}">
+      </div>
+    </div>
+  </div>
+</header>
+<section data-section-wrapper="1" class="hero">
+  <div data-section="1">
+    <div class="background">
+      <div data-slot-container="1">
+        <div data-slot="text">
+          <img class="background-image" src="{{getAssetUrl('themes/'~template~'/assets/background_hero_amp-live.jpg')}}">
+        </div>
+      </div>
+    </div>
+    <div class="container" data-slot-container="1">
+      <div data-slot="text">
+        <div class="c6 form-container">
+          <div class="form white">
+            <h3>H3 Call-To-Action</h3>
+            <span>PLACE FORM HERE</span>
+            {sharebuttons}
+          </div>
+        </div>
+        <div class="c6 hero-content">
+          <h1>H1 Header Lorem Ipsum</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed metus felis, convallis porta cursus vehicula, iaculis at erat. Suspendisse quis pulvinar ligula. Etiam sagittis, velit a cursus sollicitudin, enim ex vestibulum felis, ac finibus dui dui ac est.</p>
+          <div class="details">
+            <h2>H2 Details</h2>
+            <div class="c5 detail">
+              <p><strong>Show Starts:</strong> 7:00 PM</p>
+              <p><strong>Price:</strong> $25</p>
+              <p><strong>Speaker:</strong> Kat Sun</p>
+            </div>
+            <div class="c7 detail">
+              <p><strong>Event Info:</strong> Doors Time: 7:00pm Show Time: 8:00pm All Ages. All support acts are subject to change without notice. All bags will be searched, and no large bags or backpacks will be allowed.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section data-section-wrapper="1" class="speakers" style="background-color: #ffffff;">
+  <div data-section="1">
+    <div class="container" data-slot-container="1">
+      <div data-slot="text">
+        <h2>H2 Speakers</h2>
+        <div class="speakers-container">
+          <div class="speaker">
+            <div class="speaker-image">
+              <img src="{{getAssetUrl('themes/'~template~'/assets/photo_man.jpg')}}">
+            </div>
+            <div class="speaker-details">
+              <h3>H3 Name</h3>
+              <p>Details about speaker</p>
+              <p>More details about speaker</p>
+            </div>
+          </div>
+          <div class="speaker">
+            <div class="speaker-image">
+              <img src="{{getAssetUrl('themes/'~template~'/assets/photo_man.jpg')}}">
+            </div>
+            <div class="speaker-details">
+              <h3>H3 Name</h3>
+              <p>Details about speaker</p>
+              <p>More details about speaker</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section data-section-wrapper="1" style="background-color: #ffffff;">
+  <div data-section="1">
+    <div class="container" data-slot-container="1">
+      <div data-slot="text">
+        <h2 class="green">H2 About Company</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed metus felis, convallis porta cursus vehicula, iaculis at erat. Suspendisse quis pulvinar ligula. Etiam sagittis, velit a cursus sollicitudin, enim ex vestibulum felis, ac finibus dui dui ac est.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section data-section-wrapper="1" class="thank-you" style="background-image: url({{getAssetUrl('themes/'~template~'/assets/background_hero_amp-live.jpg')}})">
+  <div data-section="1">
+    <div class="container" data-slot-container="1">
+      <div data-slot="text">
+        <div class="c7">
+          <h1>H1 Thank You</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed metus felis, convallis porta cursus vehicula, iaculis at erat. Suspendisse quis pulvinar ligula. Etiam sagittis, velit a cursus sollicitudin, enim ex vestibulum felis, ac finibus dui dui ac est.</p>
+          <a class="button" href="#">Get Your Asset</a>
+        </div>
+        <div class="c5">
+          <img src="{{getAssetUrl('themes/'~template~'/assets/placeholder_tickets.png')}}">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section data-section-wrapper="1" class="blog-feed">
+  <div data-section="1">
+    <div class="container" data-slot-container="1">
+      <div data-slot="text">
+        <h2>Subscribe to Blog</h2>
+        <div class="three-cards">
+          <div class="blog-card three-card">
+            <div class="card-img">
+              <img src="{{getAssetUrl('themes/'~template~'/assets/placeholder_blog.jpg')}}">
+            </div>
+            <div class="card-inner">
+              <h3>H3 Blog Title</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean gravida mauris lectus, vitae semper.</p>
+              <a class="link" href="#">Read More</a>
+            </div>
+          </div>
+          <div class="blog-card three-card">
+            <div class="card-img">
+              <img src="{{getAssetUrl('themes/'~template~'/assets/placeholder_blog.jpg')}}">
+            </div>
+            <div class="card-inner">
+              <h3>H3 Blog Title</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean gravida mauris lectus, vitae semper.</p>
+              <a class="link" href="#">Read More</a>
+            </div>
+          </div>
+          <div class="blog-card three-card">
+            <div class="card-img">
+              <img src="{{getAssetUrl('themes/'~template~'/assets/placeholder_blog.jpg')}}">
+            </div>
+            <div class="card-inner">
+              <h3>H3 Blog Title</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean gravida mauris lectus, vitae semper.</p>
+              <a class="link" href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+        <a class="button green" href="#">Get Your Asset</a>
+      </div>
+    </div>
+  </div>
+</section>
+<footer data-section-wrapper="1" id="bottom">
+  <div data-section="1">
+    <div class="container" data-slot-container="1">
+      <div data-slot="text">
+        <div class="c6 logo-container">
+          <img class="logo" src="{{getAssetUrl('themes/'~template~'/assets/logo_amp-live_white.svg')}}">
+          <p><strong>© 2017 AMP.LIVE - ALL RIGHTS RESERVED.</strong></p>
+          <span>Location Part 1 | Location Part 2 | Location Part 3</span>
+        </div>
+        <div class="c6 social-container">
+          {sharebuttons}
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+{% endblock %}

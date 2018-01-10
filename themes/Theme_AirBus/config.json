@@ -1,0 +1,9 @@
+{
+  "name": "AirBus",
+  "author": "Mautic",
+  "authorUrl": "http://www.mautic.com",
+  "features": [
+  	"page",
+  	"email"
+  ]
+}

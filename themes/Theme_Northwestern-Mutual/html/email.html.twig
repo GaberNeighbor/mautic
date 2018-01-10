@@ -1,0 +1,552 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="noindex, nofollow">
+    <title>{subject}</title>
+    <style type="text/css">
+        body, table, td, a{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+        table, td{mso-table-lspace: 0pt; mso-table-rspace: 0pt;}
+        img{border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;}
+        table{border-collapse: collapse !important;}
+        body{font-family: 'Open Sans', Verdana, Arial, sans-serif; height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; -webkit-font-smoothing: antialiased !important; font-smoothing: antialiased !important;}
+        div[style*="margin: 16px 0;"] { margin:0 !important; }
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+        @media only screen and (min-width: 600px) {
+            .shrinker {
+                padding: 0 55px !important;
+            }
+            .half {
+                min-width: 225px;
+                display: table-cell;
+                padding: 0px 15px;
+            }
+            .quarter {
+                min-width: 117px;
+                display: table-cell;
+                padding: 0px 15px;
+            }
+            .three-quarter {
+                min-width: 393px;
+                display: table-cell;
+                padding: 0px 5px;
+            }
+            .half.first {
+                border-right: 1px solid #cbcdce;
+            }
+        }
+        @media only screen and (max-width: 600px) {
+            .shrinker {
+                width: 100% !important;
+            }
+            .mobile-pad {
+                padding: 0 15px;
+            }
+            .c1,.c2,.c3,.c4,.c5,.c6,.c7,.c8,.c10,.c11,.c12 {
+                width: 100% !important;
+                float: left !important;
+                display: block;
+                padding: 0 !important;
+                margin: 10px 0;
+            }
+            .half, .quarter, .three-quarter {
+                text-align: center;
+            }
+        }
+    </style>
+    <style type="text/css">
+        @font-face {
+          font-family: 'Guardian Sans';
+          src:  url('{{ getAssetUrl('themes/'~template~'/css/guardian-sans/GuardianSans-Light.woff2', null, null, true) }}') format('woff2'),
+                url('{{ getAssetUrl('themes/'~template~'/css/guardian-sans/GuardianSans-Light.woff', null, null, true) }}') format('woff'),
+                url('{{ getAssetUrl('themes/'~template~'/css/guardian-sans/GuardianSans-Light.svg', null, null, true) }}')  format('svg'); 
+          font-weight: 200;
+        }
+        @font-face {
+          font-family: 'Guardian Sans';
+          src:  url('{{ getAssetUrl('themes/'~template~'/css/guardian-sans/GuardianSans-Light-Italic.woff2', null, null, true) }}') format('woff2'),
+                url('{{ getAssetUrl('themes/'~template~'/css/guardian-sans/GuardianSans-Light-Italic.woff', null, null, true) }}') format('woff'),
+                url('{{ getAssetUrl('themes/'~template~'/css/guardian-sans/GuardianSans-Light-Italic.svg', null, null, true) }}')  format('svg'); 
+          font-weight: 200;
+          font-style: italic;
+        }
+        @font-face {
+          font-family: 'Guardian Sans';
+          src:  url('{{ getAssetUrl('themes/'~template~'/css/guardian-sans/GuardianSans-Regular.woff2', null, null, true) }}') format('woff2'),
+                url('{{ getAssetUrl('themes/'~template~'/css/guardian-sans/GuardianSans-Regular.woff', null, null, true) }}') format('woff'),
+                url('{{ getAssetUrl('themes/'~template~'/css/guardian-sans/GuardianSans-Regular.svg', null, null, true) }}')  format('svg'); 
+          font-weight: 500;
+        }
+        @font-face {
+          font-family: 'Guardian Sans';
+          src:  url('{{ getAssetUrl('themes/'~template~'/css/guardian-sans/GuardianSans-Regular-Italic.woff2', null, null, true) }}') format('woff2'),
+                url('{{ getAssetUrl('themes/'~template~'/css/guardian-sans/GuardianSans-Regular-Italic.woff', null, null, true) }}') format('woff'),
+                url('{{ getAssetUrl('themes/'~template~'/css/guardian-sans/GuardianSans-Regular-Italic.svg', null, null, true) }}')  format('svg'); 
+          font-weight: 500;
+          font-style: italic;
+        }
+        @font-face {
+          font-family: 'Guardian Sans';
+          src:  url('{{ getAssetUrl('themes/'~template~'/css/guardian-sans/GuardianSans-Medium.woff2', null, null, true) }}') format('woff2'),
+                url('{{ getAssetUrl('themes/'~template~'/css/guardian-sans/GuardianSans-Medium.woff', null, null, true) }}') format('woff'),
+                url('{{ getAssetUrl('themes/'~template~'/css/guardian-sans/GuardianSans-Medium.svg', null, null, true) }}')  format('svg'); 
+          font-weight: 700;
+        }
+        @font-face {
+          font-family: 'Guardian Sans';
+          src:  url('{{ getAssetUrl('themes/'~template~'/css/guardian-sans/GuardianSans-Medium-Italic.woff2', null, null, true) }}') format('woff2'),
+                url('{{ getAssetUrl('themes/'~template~'/css/guardian-sans/GuardianSans-Medium-Italic.woff', null, null, true) }}') format('woff'),
+                url('{{ getAssetUrl('themes/'~template~'/css/guardian-sans/GuardianSans-Medium-Italic.svg', null, null, true) }}')  format('svg'); 
+          font-weight: 700;
+          font-style: italic;
+        }
+    </style>
+</head>
+ <body style="margin:0; padding:0;" bgcolor="#f7f8f8">
+    <table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="#f7f8f8">
+        <tr>
+            <td width="100%" valign="top" align="center" bgcolor="#f7f8f8">
+                <center>
+                    <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" data-section-wrapper="1">
+                        <tr data-section="1">
+                            <td align="center" height="100%" valign="top" width="100%">
+                                <!--[if (gte mso 9)|(IE)]>
+                                <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+                                <tr>
+                                <td align="center" valign="top" width="600">
+                                <![endif]-->
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;" bgcolor="#f7f8f8">
+                                    <tr>
+                                        <td align="center" style="font-family: 'Guardian Sans', Arial, sans-serif; padding: 0 15px;" class="shrinker" data-slot-container="1">
+                                            <div data-slot="text">
+                                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:550px;">
+                                                    <tr>
+                                                        <td height="10" style="font-size: 10px; line-height: 10px;">&nbsp;</td>
+                                                    </tr> 
+                                                    <tr>
+                                                        <td align="center" height="100%" valign="top" width="100%">
+                                                            <img src="{{ getAssetUrl('themes/'~template~'/assets/logo_northwestern-mutual.png', null, null, true) }}" style="width: 211px; height: 26px" width="211" height="26">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td height="10" style="font-size: 10px; line-height: 10px;">&nbsp;</td>
+                                                    </tr>
+                                                </table>
+                                             </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                </tr>
+                                </table>
+                                <![endif]-->
+                            </td>
+                        </tr>
+                    </table>
+                    <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" data-section-wrapper="1">
+                        <tr data-section="1">
+                            <td align="center" height="100%" valign="top" width="100%">
+                                <!--[if (gte mso 9)|(IE)]>
+                                <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+                                <tr>
+                                <td align="center" valign="top" width="600">
+                                <![endif]-->
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px; -webkit-box-shadow: 0px 6px 12px -2px rgba(0,0,0,0.25); -moz-box-shadow: 0px 6px 12px -2px rgba(0,0,0,0.25); box-shadow: 0px 6px 12px -2px rgba(0,0,0,0.25);" bgcolor="#f7f8f8">
+                                    <tr>
+                                        <td align="center" style="font-family: 'Guardian Sans', Arial, sans-serif;" style="background:#00487c;" data-slot-container="1">
+                                            <div data-slot="text">
+                                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px; background: #f7f8f8"> 
+                                                    <tr>
+                                                        <td align="center" height="100%" valign="top" width="100%">
+                                                            <img src="{{ getAssetUrl('themes/'~template~'/assets/bg_user.jpg', null, null, true) }}" style="width: 100% !important; max-width: 600px; height: auto;" width="600">
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                             </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                </tr>
+                                </table>
+                                <![endif]-->
+                            </td>
+                        </tr>
+                    </table>
+                    <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" data-section-wrapper="1">
+                        <tr data-section="1">
+                            <td align="center" height="100%" valign="top" width="100%">
+                                <!--[if (gte mso 9)|(IE)]>
+                                <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+                                <tr>
+                                <td align="center" valign="top" width="600">
+                                <![endif]-->
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px; -webkit-box-shadow: 0px 6px 12px -2px rgba(0,0,0,0.25); -moz-box-shadow: 0px 6px 12px -2px rgba(0,0,0,0.25); box-shadow: 0px 6px 12px -2px rgba(0,0,0,0.25);" bgcolor="#f7f8f8">
+                                    <tr>
+                                        <td align="center" style="font-family: 'Guardian Sans', Arial, sans-serif; background:#00487c; color:#ffffff; padding: 0 15px;" class="shrinker" data-slot-container="1">
+                                            <div data-slot="text">
+                                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:550px;">
+                                                    <tr>
+                                                        <td height="20" style="font-size: 20px; line-height: 20px;">&nbsp;</td>
+                                                    </tr> 
+                                                    <tr>
+                                                        <td align="center" height="100%" valign="top" width="100%">
+                                                            <h1 style="font-weight: 200; font-size: 36px; color: #ffffff;">These 6 money rules are the key to taking your finances up a notch</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td height="20" style="font-size: 20px; line-height: 20px;">&nbsp;</td>
+                                                    </tr>
+                                                </table>
+                                             </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                </tr>
+                                </table>
+                                <![endif]-->
+                            </td>
+                        </tr>
+                    </table>
+                    <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" data-section-wrapper="1">
+                        <tr data-section="1">
+                            <td align="center" height="100%" valign="top" width="100%">
+                                <!--[if (gte mso 9)|(IE)]>
+                                <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+                                <tr>
+                                <td align="center" valign="top" width="600">
+                                <![endif]-->
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px; -webkit-box-shadow: 0px 6px 12px -2px rgba(0,0,0,0.25); -moz-box-shadow: 0px 6px 12px -2px rgba(0,0,0,0.25); box-shadow: 0px 6px 12px -2px rgba(0,0,0,0.25);" bgcolor="#f7f8f8">
+                                    <tr>
+                                        <td align="center" style="font-family: 'Guardian Sans', Arial, sans-serif; background:#ffffff; color:#072c49; padding: 0 15px;" class="shrinker" data-slot-container="1">
+                                            <div data-slot="text">
+                                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:550px;">
+                                                    <tr>
+                                                        <td height="20" style="font-size: 20px; line-height: 20px;">&nbsp;</td>
+                                                    </tr> 
+                                                    <tr>
+                                                        <td align="center" height="100%" valign="top" width="100%">
+                                                            <p style="color: #072c49; font-size: 16px; font-weight: 200; text-align:left; line-height:24px">Hi [First name],</p>
+                                                            <p style="color: #072c49; font-size: 16px; font-weight: 200; text-align:left; line-height:24px">Since you’re already on your way to mastering your money in your 30s, we thought these tips could give you even more of a financial edge.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td height="20" style="font-size: 20px; line-height: 20px;">&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" height="100%" valign="top" width="100%">
+                                                            <table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 245px;">
+                                                                <tr>
+                                                                    <td align="center" style="height: 45px;" bgcolor="ffb81c">
+                                                                        <a href="#" target="_blank" style="padding: 18px 0 15px 0; color: #072c49; width: 100%; font-size: 14px; font-weight: 700; text-align: center; letter-spacing: 0.5px; text-decoration: none; line-height: 12px; display: inline-block; vertical-align: middle;">&nbsp;&nbsp;CTA BUTTON&nbsp;&nbsp;</a>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td height="20" style="font-size: 20px; line-height: 20px;">&nbsp;</td>
+                                                    </tr>
+                                                </table>
+                                             </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                </tr>
+                                </table>
+                                <![endif]-->
+                            </td>
+                        </tr>
+                    </table>
+                    <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" data-section-wrapper="1">
+                        <tr data-section="1">
+                            <td align="center" height="100%" valign="top" width="100%">
+                                <!--[if (gte mso 9)|(IE)]>
+                                <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+                                <tr>
+                                <td align="center" valign="top" width="600">
+                                <![endif]-->
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px; -webkit-box-shadow: 0px 6px 12px -2px rgba(0,0,0,0.25); -moz-box-shadow: 0px 6px 12px -2px rgba(0,0,0,0.25); box-shadow: 0px 6px 12px -2px rgba(0,0,0,0.25);" bgcolor="#f7f8f8">
+                                    <tr>
+                                        <td align="center" style="font-family: 'Guardian Sans', Arial, sans-serif; background:#ffffff; color:#072c49; padding: 0 15px;" class="shrinker" data-slot-container="1">
+                                            <div data-slot="text">
+                                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:550px;">
+                                                    <tr>
+                                                        <td height="20" style="font-size: 20px; line-height: 20px;">&nbsp;</td>
+                                                    </tr> 
+                                                    <tr>
+                                                        <td align="center" height="100%" valign="top" width="100%">
+                                                            <h2 style="font-weight: 200; font-size: 24px; text-align: center; margin: 0;">TAKE THE NEXT STEP</h2>
+                                                            <p style="color: #072c49; font-size: 16px; font-weight: 200; text-align:left; line-height:24px">No matter where you are with your finances, there’s always a way to make your money work harder for you. That’s where our advisors come in—to help you figure out your next financial step. </p>
+                                                            <p style="color: #072c49; font-size: 16px; font-weight: 200; text-align:left; line-height:24px"><strong>Ready to get started?</strong> Let us match you with the right advisor for you. <a href="#" style="color: #00487c;">Get matched.</a></p>
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td height="20" style="font-size: 20px; line-height: 20px;">&nbsp;</td>
+                                                    </tr>
+                                                </table>
+                                             </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                </tr>
+                                </table>
+                                <![endif]-->
+                            </td>
+                        </tr>
+                    </table>
+                    <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" data-section-wrapper="1">
+                        <tr data-section="1">
+                            <td align="center" height="100%" valign="top" width="100%">
+                                <!--[if (gte mso 9)|(IE)]>
+                                <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+                                <tr>
+                                <td align="center" valign="top" width="600">
+                                <![endif]-->
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px; -webkit-box-shadow: 0px 6px 12px -2px rgba(0,0,0,0.25); -moz-box-shadow: 0px 6px 12px -2px rgba(0,0,0,0.25); box-shadow: 0px 6px 12px -2px rgba(0,0,0,0.25);" bgcolor="#f7f8f8">
+                                    <tr>
+                                        <td align="center" style="font-family: 'Guardian Sans', Arial, sans-serif; background:#00487c; color:#ffffff;" data-slot-container="1">
+                                            <div data-slot="text">
+                                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:660px;">
+                                                    <tr>
+                                                        <td height="15" style="font-size: 15px; line-height: 15px;">&nbsp;</td>
+                                                    </tr>
+                                                    <tr class="quarter" align="center">
+                                                        <td align="center" height="100%" valign="top" width="100%" style="padding: 15px">
+                                                            <img src="{{ getAssetUrl('themes/'~template~'/assets/icon_degree.png', null, null, true) }}" style="width: 56px; height: 67px;">
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="three-quarter" align="center" style="padding-left: 0 !important">
+                                                        <td align="left" height="100%" valign="top" width="100%" style="padding: 0 15px 10px 15px">
+                                                            <h1 style="font-weight: 200; font-size: 30px; text-align: left; color: #ffffff">You’ve just taken the first step to money mastery in your 30s.</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td height="10" style="font-size: 10px; line-height: 10px;">&nbsp;</td>
+                                                    </tr>
+                                                </table>
+                                             </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                </tr>
+                                </table>
+                                <![endif]-->
+                            </td>
+                        </tr>
+                    </table>
+                    <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" data-section-wrapper="1">
+                        <tr data-section="1">
+                            <td align="center" height="100%" valign="top" width="100%">
+                                <!--[if (gte mso 9)|(IE)]>
+                                <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+                                <tr>
+                                <td align="center" valign="top" width="600">
+                                <![endif]-->
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px; -webkit-box-shadow: 0px 6px 12px -2px rgba(0,0,0,0.25); -moz-box-shadow: 0px 6px 12px -2px rgba(0,0,0,0.25); box-shadow: 0px 6px 12px -2px rgba(0,0,0,0.25);" bgcolor="#f7f8f8">
+                                    <tr>
+                                        <td align="center" style="font-family: 'Guardian Sans', Arial, sans-serif; background:#f8fafc; color:#072c49;" data-slot-container="1">
+                                            <div data-slot="text">
+                                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+                                                    <tr>
+                                                        <td height="30" style="font-size: 30px; line-height: 30px;">&nbsp;</td>
+                                                    </tr> 
+                                                    <tr class="half first" align="center">
+                                                        <td align="center" height="100%" valign="top" width="100%" style="padding: 0 15px;">
+                                                            <h2 style="font-weight: 500; font-size: 20px; text-align: center; margin: 0; color: #00487c;">WHY WORK WITH US?</h2>
+                                                            <p style="color: #072c49; font-size: 14px; font-weight: 200; text-align: center; line-height:20px; margin: 0">Here are just a few reasons.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="half" align="center" style="padding: 0 15px;">
+                                                        <td align="left" height="100%" valign="top" width="100%" style="padding: 0 15px;">
+                                                            <span style="font-weight: 500; font-size: 35px; text-align: left; margin: 0; color: #00487c;">4.4M</span>
+                                                            <p style="color: #072c49; font-size: 14px; font-weight: 200; text-align: left; line-height:20px; margin: 0">People we're proud to call clients, and who put their trust in Northwestern Mutual.</p>
+                                                            <br>
+                                                            <span style="font-weight: 500; font-size: 35px; text-align: left; margin: 0; color: #00487c;">96%</span>
+                                                            <p style="color: #072c49; font-size: 14px; font-weight: 200; text-align: left; line-height:20px; margin: 0">Of our clients who stay with us year over year.</p>
+                                                            <br>
+                                                            <span style="font-weight: 500; font-size: 35px; text-align: left; margin: 0; color: #00487c;">160</span>
+                                                            <p style="color: #072c49; font-size: 14px; font-weight: 200; text-align: left; line-height:20px; margin: 0">Years we've been there for our clients — through depressions, downturns, and two World Wars.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td height="30" style="font-size: 30px; line-height: 30px;">&nbsp;</td>
+                                                    </tr> 
+                                                </table>
+                                             </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                </tr>
+                                </table>
+                                <![endif]-->
+                            </td>
+                        </tr>
+                    </table>
+                    <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" data-section-wrapper="1">
+                        <tr data-section="1">
+                            <td align="center" height="100%" valign="top" width="100%">
+                                <!--[if (gte mso 9)|(IE)]>
+                                <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+                                <tr>
+                                <td align="center" valign="top" width="600">
+                                <![endif]-->
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px; -webkit-box-shadow: 0px 6px 12px -2px rgba(0,0,0,0.25); -moz-box-shadow: 0px 6px 12px -2px rgba(0,0,0,0.25); box-shadow: 0px 6px 12px -2px rgba(0,0,0,0.25);" bgcolor="#f7f8f8">
+                                    <tr>
+                                        <td align="center" style="font-family: 'Guardian Sans', Arial, sans-serif; background:#ffffff; color:#072c49; padding: 0 15px;" class="shrinker" data-slot-container="1">
+                                            <div data-slot="text">
+                                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:340px;">
+                                                    <tr>
+                                                        <td height="30" style="font-size: 30px; line-height: 30px;">&nbsp;</td>
+                                                    </tr> 
+                                                    <tr>
+                                                        <td align="center" height="100%" valign="top" width="100%">
+                                                            <h1 style="font-weight: 500; font-size: 24px; text-align: center; margin: 0;">READY TO GET STARTED?<br>HERE'S WHAT YOU CAN EXPECT WHEN YOU WORK WITH US:</h1>
+                                                            <ul style="color: #072c49; font-size: 16px; font-weight: 200; text-align:left; line-height:20px; margin-bottom: 0;">
+                                                                <li style="color: #072c49; font-size: 16px; font-weight: 200; text-align:left; line-height:20px; margin-bottom: 10px;">A plan tailored to your goals, helping you make the most of your money now and later</li>
+                                                                <li style="color: #072c49; font-size: 16px; font-weight: 200; text-align:left; line-height:20px; margin-bottom: 10px;">A judgement-free, pressure-free environment</li>
+                                                                <li style="color: #072c49; font-size: 16px; font-weight: 200; text-align:left; line-height:20px; margin-bottom: 10px;">Jargon-free conversations</li>
+                                                                <li style="color: #072c49; font-size: 16px; font-weight: 200; text-align:left; line-height:20px; margin-bottom: 10px;">A financial partner who understands your big picture</li>
+                                                                <li style="color: #072c49; font-size: 16px; font-weight: 200; text-align:left; line-height:20px; margin-bottom: 10px;">Online tools and goal trackers</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td height="20" style="font-size: 20px; line-height: 20px;">&nbsp;</td>
+                                                    </tr>
+                                                </table>
+                                             </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                </tr>
+                                </table>
+                                <![endif]-->
+                            </td>
+                        </tr>
+                    </table>
+                    <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" data-section-wrapper="1">
+                        <tr data-section="1">
+                            <td align="center" height="100%" valign="top" width="100%">
+                                <!--[if (gte mso 9)|(IE)]>
+                                <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+                                <tr>
+                                <td align="center" valign="top" width="600">
+                                <![endif]-->
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px; -webkit-box-shadow: 0px 6px 12px -2px rgba(0,0,0,0.25); -moz-box-shadow: 0px 6px 12px -2px rgba(0,0,0,0.25); box-shadow: 0px 6px 12px -2px rgba(0,0,0,0.25);" bgcolor="#f7f8f8">
+                                    <tr>
+                                        <td align="center" style="font-family: 'Guardian Sans', Arial, sans-serif; background:#ffffff; color:#072c49; padding: 0 15px;" class="shrinker" data-slot-container="1">
+                                            <div data-slot="text">
+                                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:550px;"> 
+                                                    <tr>
+                                                        <td align="center" height="100%" valign="top" width="100%">
+                                                            <p style="color: #072c49; font-size: 16px; font-weight: 200; text-align:center; line-height:24px">Take the next step. Our financial advisors are here to help.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td height="20" style="font-size: 20px; line-height: 20px;">&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" height="100%" valign="top" width="100%">
+                                                            <table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 245px;">
+                                                                <tr>
+                                                                    <td align="center" style="height: 45px;" bgcolor="ffb81c">
+                                                                        <a href="#" target="_blank" style="padding: 18px 0 15px 0; color: #072c49; width: 100%; font-size: 14px; font-weight: 700; text-align: center; letter-spacing: 0.5px; text-decoration: none; line-height: 12px; display: inline-block; vertical-align: middle;">&nbsp;&nbsp;CTA BUTTON&nbsp;&nbsp;</a>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td height="40" style="font-size: 40px; line-height: 40px;">&nbsp;</td>
+                                                    </tr>
+                                                </table>
+                                             </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                </tr>
+                                </table>
+                                <![endif]-->
+                            </td>
+                        </tr>
+                    </table>
+                     <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" data-section-wrapper="1">
+                        <tr data-section="1">
+                            <td align="center" height="100%" valign="top" width="100%">
+                                <!--[if (gte mso 9)|(IE)]>
+                                <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+                                <tr>
+                                <td align="center" valign="top" width="600">
+                                <![endif]-->
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:630px;" class="mobile-pad">
+                                    <tr>
+                                        <td align="center" style="font-family: 'Guardian Sans', Arial, sans-serif; background: transparent; color:#072c49;"  data-slot-container="1">
+                                            <div data-slot="text">
+                                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:630px;">
+                                                    <tr>
+                                                        <td height="20" style="font-size: 20px; line-height: 20px;">&nbsp;</td>
+                                                    </tr> 
+                                                    <tr>
+                                                        <td align="left" height="100%" valign="top" width="100%" style="padding: 0 15px;">
+                                                            <span style="font-family: 'Guardian Sans', Arial, sans-serif; color: #777777; font-size:12px;
+                                                            text-align: left;">Northwestern Mutual is the marketing name for The Northwestern Mutual Life Insurance Company (NM), Milwaukee, WI (life and disability insurance, annuities, and life insurance with long-term care benefits) and its subsidiaries.</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td height="10" style="font-size: 10px; line-height: 10px;">&nbsp;</td>
+                                                    </tr> 
+                                                    <tr>
+                                                        <td align="left" height="100%" valign="top" width="100%" style="padding: 0 15px;">
+                                                            <span style="font-family: 'Guardian Sans', Arial, sans-serif; color: #777777; font-size:12px;
+                                                            text-align: left;">{unsubscribe_text}</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td height="20" style="font-size: 20px; line-height: 20px;">&nbsp;</td>
+                                                    </tr>
+                                                </table>
+                                             </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                </tr>
+                                </table>
+                                <![endif]-->
+                            </td>
+                        </tr>
+                    </table>
+                </center>
+            </td>
+        </tr>    
+    </table>   
+  </body>
+</html>

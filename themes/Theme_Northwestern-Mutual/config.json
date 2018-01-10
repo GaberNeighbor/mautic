@@ -1,0 +1,9 @@
+{
+  "name": "Northwestern Mutual",
+  "author": "Mautic",
+  "authorUrl": "http://www.mautic.com",
+  "features": [
+  	"email",
+    "page"
+  ]
+}

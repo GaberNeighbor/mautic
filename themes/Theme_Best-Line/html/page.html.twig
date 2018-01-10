@@ -1,0 +1,177 @@
+{% extends ":"~template~":base.html.twig" %}
+{% block content %}
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" data-section-wrapper="1">
+  <div data-section="1">
+    <div class="container">
+      <div data-slot-container="1">
+        <div data-slot="text">
+          <a class="navbar-brand" href="#">Best Line Equipment</a>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <div data-slot-container="1">
+          <div data-slot="text">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">BestLine.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header class="masthead text-center text-white" style="" data-section-wrapper="1">
+  <div data-section="1">
+    <div class="masthead-content">
+      <div class="container">
+        <div data-slot-container="1">
+          <div data-slot="text">
+            <a href="https://www.bestline.com">
+              <img class="logo" src="{{getAssetUrl('themes/'~template~'/assets/BLE_Logo_R.png')}}" alt="Best Line Logo"></a>
+          </div>
+        </div>
+        <div class="wrapper">   
+          <div data-slot-container="1">
+            <div data-slot="text">
+              <h1 class="masthead-heading mb-0" style="color: #000000">We're Thankful You're Our Customer</h1>
+              <h2 style="color: #000000" class="masthead-subheading mb-0 title" style="color: #818181;"><span style="font-size: .75em;">That's why we're giving you $200 in service cash. It's our way of saying <em>thanks.</em></span></h2>
+              
+              <p style="color: #000000">Lorem ipsum dolor amet waistcoat ullamco lyft gastropub reprehenderit etsy yr in austin brooklyn pour-over farm-to-table art party. Poutine sed live-edge pinterest tumblr. Ex nostrud waistcoat ennui magna hella mustache franzen. Truffaut humblebrag hexagon williamsburg.</p>
+              <img class="img-fluid img-main" src="{{getAssetUrl('themes/'~template~'/assets/bobcat-man.jpg')}}" alt="Bobcat Planned Maintenance">
+              <p style="color: #000000">Irure coloring book reprehenderit vexillologist. Cliche tbh sustainable, pariatur activated charcoal succulents quinoa vegan four loko PBR. Meditation snackwave live-edge nulla listicle, vegan migas flexitarian. Cornhole craft beer tousled kogi XOXO velit meggings sunt knausgaard et gluten-free beard. Locavore glossier post-ironic ut bicycle rights you probably haven't heard of them salvia. Narwhal mustache succulents ugh celiac.</p>
+              <p style="color: #000000">Lorem ipsum dolor amet hexagon cray laborum forage viral. Voluptate drinking vinegar wolf mumblecore. Kitsch chillwave copper mug keffiyeh, retro tumblr celiac enamel pin flannel readymade wayfarers. Swag neutra franzen messenger bag laboris mustache whatever, pour-over pitchfork. Church-key locavore craft beer, photo booth blue bottle mixtape exercitation esse sint ethical readymade af bitters lomo.</p>
+              <a href="#" class="btn btn-primary btn-xl rounded-pill mt-5">Schedule Your Bobcat Service</a>
+            </div>
+          </div>
+        </div>
+        <div class="learn-more-wrapper">
+          <div data-slot-container="1">
+            <div data-slot="text">
+              <a href="#learn" class="learn-more">
+                &#9660 Learn More About Our Products &#9660
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<section data-section-wrapper="1">
+  <div data-section="1">
+    <div class="container"><a name="learn"></a>
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+            <div data-slot-container="1">
+              <div data-slot="text">
+                <img class="img-fluid rounded-circle" src="{{getAssetUrl('themes/'~template~'/assets/jlg.jpg')}}" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="p-5">
+            <div data-slot-container="1">
+              <div data-slot="text">
+                <h2 style="color: #000000" class="display-4">Need a lift?</h2>
+                <h3>Ask us about our variety of lift solutions including Scissor lifts, Telehanglers, Booms, and more!</h3>
+                <p style="color: #000000">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+                <a href="#" class="btn btn-primary btn-xl mt-5 rounded-pill2">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-section-wrapper="1">
+  <div data-section="1">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="p-5">
+            <div data-slot-container="1">
+              <div data-slot="text">
+                <img class="img-fluid rounded-circle" src="{{getAssetUrl('themes/'~template~'/assets/doosan.jpg')}}" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-5">
+            <div data-slot-container="1">
+              <div data-slot="text">
+                <h2 style="color: #000000" class="display-4">Move More</h2>
+                <h3>We offer many heavy equipment and earth moving solutions.</h3>
+                <p style="color: #000000">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+                <a href="#" class="btn btn-primary btn-xl mt-5 rounded-pill2">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-section-wrapper="1">
+  <div data-section="1">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <div class="p-5">
+            <div data-slot-container="1">
+              <div data-slot="text">
+                <img class="img-fluid rounded-circle" src="{{getAssetUrl('themes/'~template~'/assets/allmand.jpg')}}" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="p-5">
+            <div data-slot-container="1">
+              <div data-slot="text">
+                <h2 style="color: #000000" class="display-4">Take the Heat</h2>
+                <h3>Our ground thaw units keep your site up and running even in the coldest conditions.</h3>
+                <p style="color: #000000">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+                <a href="#" class="btn btn-primary btn-xl mt-5 rounded-pill2">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-5 bg-black" data-section-wrapper="1">
+  <div data-section="1">
+    <div class="container">
+      <div data-slot-container="1">
+        <div data-slot="text">
+          <a href="https://www.facebook.com/bestlineequipment/">
+            <img alt="Facebook" src="{{getAssetUrl('themes/'~template~'/assets/fb.png')}}" style="border-width: 0px; border-style: solid; width: 30px; height: 30px; float: right; margin-left: 5px; margin-right: 65px;margin-top: 10px;" />
+          </a> 
+          <a href="https://twitter.com/bestlineinc">
+            <img alt="Facebook" src="{{getAssetUrl('themes/'~template~'/assets/tw.png')}}" style="border-width: 0px; border-style: solid; width: 30px; height: 30px; float: right; margin-left: 5px; margin-right: 5px;margin-top: 10px;" /></a>
+          <a href="https://www.instagram.com/bestlinepowersports/">
+            <img alt="Facebook" src="{{getAssetUrl('themes/'~template~'/assets/ig.png')}}" style="border-width: 0px; border-style: solid; width: 30px; height: 30px; float: right; margin-left: 5px; margin-right: 5px;margin-top: 10px;" /></a> 
+          <a href="https://www.linkedin.com/company/best-line-equipment">
+            <img alt="Facebook" src="{{getAssetUrl('themes/'~template~'/assets/li.png')}}" style="border-width: 0px; border-style: solid; width: 30px; height: 30px; float: right; margin-left: 5px; margin-right: 5px;margin-top: 10px;" />
+          </a>
+          <p style="color: #000000" class="m-0 text-white small">Copyright &copy; 2018 | Best Line Equipment</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.container -->
+</footer>
+{% endblock %}

@@ -1,0 +1,363 @@
+{% extends ":"~template~":base.html.twig" %}
+{% block content %}
+<header data-section-wrapper="1">
+  <div data-section="1">
+    <div class="container">
+      <div data-slot-container="1" class="c7">
+        <div data-slot="text">
+          <img class="logo" src="{{getAssetUrl('themes/'~template~'/assets/logo_airbus.png')}}">
+        </div>
+      </div>
+      <div data-slot-container="1" class="c5 cta">
+        <div data-slot="text">
+          <h2>H2 Call-To-Action</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<section data-section-wrapper="1" class="hero" id="top">
+  <div data-section="1">
+    <div class="container" data-slot-container="1">
+      <div data-slot="text" class="c7">
+        <h1>Schedule your visit at&nbsp;Airbus</h1>
+        <p>Et eodem impetu Domitianum praecipitem per scalas itidem funibus constrinxerunt, eosque coniunctos per ampla spatia civitatis acri raptavere discursu.</p>
+        <a href="#support-services" name="support-services" class="button blue">Support & Services</a>
+        <a href="#products" name="products" class="button blue">Products</a>
+      </div>
+    </div>
+  </div>
+</section>
+<div data-section-wrapper="1" class="fixed-form">
+  <div data-section="1">
+    <div class="form">
+      <div data-slot-container="1">
+        <div data-slot="text">
+          {form=3}
+        </div>
+      </div>
+      <div data-slot-container="1">
+        <div class="thank-you-cta" data-slot="text">
+          <a href="#">
+            <h3>Brochure Trainining</h3>
+            <img src="{{getAssetUrl('themes/'~template~'/assets/totem-2_products-services.jpg')}}">
+            <span class="button blue">Download</span>
+          </a>
+          <a href="#">
+            <h3>Brochure FlyScan</h3>
+            <img src="{{getAssetUrl('themes/'~template~'/assets/totem-3_products-services.jpg')}}">
+            <span class="button blue">Download</span>
+          </a>
+        </div>
+        <div class="thank-you-cta" data-slot="text">
+          <a href="#">
+            <h3>Brochure Connected Services</h3>
+            <img src="{{getAssetUrl('themes/'~template~'/assets/totem-2_products-services.jpg')}}">
+            <span href="#" class="button blue">Download</span>
+          </a>
+          <a href="#">
+            <h3>Brochure SkyTech</h3>
+            <img src="{{getAssetUrl('themes/'~template~'/assets/totem-3_products-services.jpg')}}">
+            <span href="#" class="button blue">Download</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<section data-section-wrapper="1" class="services-support" id="services-support">
+  <div data-section="1">
+    <div class="container">
+      <div class="c7">
+        <div data-slot-container="1">
+          <div data-slot="text" class="tab">
+            <h2>Services & Support</h2>
+            <a href="#products" name="products" class="button blue">Products</a>
+          </div>
+        </div>
+        <div class="intro" data-slot-container="1">
+          <div data-slot="text">
+            <p><strong>Introduction</strong> Et eodem impetu Domitianum praecipitem per scals itidem funibus constrinxerunt, eosque coniunctos per ampla spatia civitatis acri.</p>
+          </div>
+        </div>
+        <div class="totem">
+          <div data-slot-container="1">
+            <div data-slot="text">
+              <h3>Totem 1: Material Management, Aircraft maintenance, SB/ STC</h3>
+            </div>
+          </div>
+          <div class="c4 img" data-slot-container="1">
+            <div data-slot="text">
+              <img src="{{getAssetUrl('themes/'~template~'/assets/totem-1_products-services.jpg')}}">
+            </div>
+          </div>
+          <div class="c8 text" data-slot-container="1">
+            <div data-slot="text">
+              <p>Wide range of Aircraft Maintenance solutions, at you doorstep! Whether its detailed avionics or interior aesthetics, sheet metal production or mechanical repair, the wide range of services provided by the Airbus Helicopters maintenance and repair department ensures that customers receive total support for structures, avionics and dynamics.</p>
+            </div>
+          </div>
+        </div>
+        <div class="totem">
+          <div data-slot-container="1">
+            <div data-slot="text">
+              <h3>Totem 2: Training</h3>
+            </div>
+          </div>
+          <div class="c4 img" data-slot-container="1">
+            <div data-slot="text">
+              <img src="{{getAssetUrl('themes/'~template~'/assets/totem-2_products-services.jpg')}}">
+            </div>
+          </div>
+          <div class="c8 text" data-slot-container="1">
+            <div data-slot="text">
+              <p><strong>Discover Airbus Helicopters new worldwide Training Offer!</strong></p>
+              <ul>
+                <li>Introducing the New Learning Management System</li>
+                <li>Virtual Maintenance Trainer</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="totem">
+          <div data-slot-container="1">
+            <div data-slot="text">
+              <h3>Totem 3: Technical Support, FlyScan, SkyTech</h3>
+            </div>
+          </div>
+          <div class="c4 img" data-slot-container="1">
+            <div data-slot="text">
+              <img src="{{getAssetUrl('themes/'~template~'/assets/totem-3_products-services.jpg')}}">
+            </div>
+          </div>
+          <div class="c8 text" data-slot-container="1">
+            <div data-slot="text">
+              <p><strong>Toward predictive maintenance</strong></p>
+              <ul>
+                <li>FlyScan new HUMS service packages maximize your operations efficiency</li>
+                <li>Increasing both fleet availability and flight safety</li>
+                <li>Discover our New Remote Assistance solution SkyTech!</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="totem">
+          <div data-slot-container="1">
+            <div data-slot="text">
+              <h3>Totem 4: Connected Services</h3>
+            </div>
+          </div>
+          <div class="c4 img" data-slot-container="1">
+            <div data-slot="text">
+              <img src="{{getAssetUrl('themes/'~template~'/assets/totem-4_products-services.jpg')}}">
+            </div>
+          </div>
+          <div class="c8 text" data-slot-container="1">
+            <div data-slot="text">
+              <p><strong>Prepare your mission</strong></p>
+              <ul>
+                <li>Flight Planner, the Airbus Helicopters fully integrated Electronic Flight Bag, delivers an easier and safer way to manage flight preparation, including flight performance computation.</li>
+              </ul>
+              <p><strong>Manage your fleet</strong></p>
+              <ul>
+                <li>Fleet Keeper, the electronic technical logbook and Envision, the Maintenance Information System, offer digital services to support and ease maintenance operations.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="totem" data-slot-container="1">
+          <div data-slot="text">
+            <a href="#top" name="top" class="button blue">Back to Top</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section data-section-wrapper="1" class="contacts">
+  <div data-section="1">
+    <div class="container">
+      <div data-slot-container="1">
+        <div data-slot="text">
+          <h2>Contacts</h2>
+        </div>
+      </div>
+      <div class="speakers-container">
+        <div class="speaker c7" data-slot-container="1">
+          <div data-slot="text">
+            <div class="speaker-image">
+              <img src="{{getAssetUrl('themes/'~template~'/assets/photo_man.jpg')}}">
+            </div>
+          </div>
+          <div class="speaker-details" data-slot-container="1">
+            <div data-slot="text">
+              <h3>HCare Marketing Team</h3>
+              <p><strong>Audrey Brousse</strong></p>
+              <p>audrey.brousse@airbus.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="speaker c7" data-slot-container="1">
+          <div data-slot="text">
+            <div class="speaker-image">
+              <img src="{{getAssetUrl('themes/'~template~'/assets/photo_man.jpg')}}">
+            </div>
+          </div>
+          <div class="speaker-details" data-slot-container="1">
+            <div data-slot="text">
+              <h3>HCare Marketing Team</h3>
+              <p><strong>Audrey Brousse</strong></p>
+              <p>audrey.brousse@airbus.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="speaker c7" data-slot-container="1">
+          <div data-slot="text">
+            <div class="speaker-image">
+              <img src="{{getAssetUrl('themes/'~template~'/assets/photo_man.jpg')}}">
+            </div>
+          </div>
+          <div class="speaker-details" data-slot-container="1">
+            <div data-slot="text">
+              <h3>HCare Marketing Team</h3>
+              <p><strong>Audrey Brousse</strong></p>
+              <p>audrey.brousse@airbus.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section data-section-wrapper="1" class="products" id="products">
+  <div data-section="1">
+    <div class="container">
+      <div class="c7">
+        <div data-slot-container="1">
+          <div data-slot="text" class="tab">
+            <h2>Products</h2>
+            <a href="#services-support" name="services-support" class="button blue">Services & Support</a>
+          </div>
+        </div>
+        <div class="intro" data-slot-container="1">
+          <div data-slot="text">
+            <p><strong>Introduction</strong> Et eodem impetu Domitianum praecipitem per scals itidem funibus constrinxerunt, eosque coniunctos per ampla spatia civitatis acri.</p>
+          </div>
+        </div>
+        <div class="totem">
+          <div data-slot-container="1">
+            <div data-slot="text">
+              <h3>Totem 1: Material Management, Aircraft maintenance, SB/ STC</h3>
+            </div>
+          </div>
+          <div class="c4 img" data-slot-container="1">
+            <div data-slot="text">
+              <img src="{{getAssetUrl('themes/'~template~'/assets/totem-1_products-services.jpg')}}">
+            </div>
+          </div>
+          <div class="c8 text" data-slot-container="1">
+            <div data-slot="text">
+              <p>Wide range of Aircraft Maintenance solutions, at you doorstep! Whether its detailed avionics or interior aesthetics, sheet metal production or mechanical repair, the wide range of services provided by the Airbus Helicopters maintenance and repair department ensures that customers receive total support for structures, avionics and dynamics.</p>
+            </div>
+          </div>
+        </div>
+        <div class="totem">
+          <div data-slot-container="1">
+            <div data-slot="text">
+              <h3>Totem 2: Training</h3>
+            </div>
+          </div>
+          <div class="c4 img" data-slot-container="1">
+            <div data-slot="text">
+              <img src="{{getAssetUrl('themes/'~template~'/assets/totem-2_products-services.jpg')}}">
+            </div>
+          </div>
+          <div class="c8 text" data-slot-container="1">
+            <div data-slot="text">
+              <p><strong>Discover Airbus Helicopters new worldwide Training Offer!</strong></p>
+              <ul>
+                <li>Introducing the New Learning Management System</li>
+                <li>Virtual Maintenance Trainer</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="totem">
+          <div data-slot-container="1">
+            <div data-slot="text">
+              <h3>Totem 3: Technical Support, FlyScan, SkyTech</h3>
+            </div>
+          </div>
+          <div class="c4 img" data-slot-container="1">
+            <div data-slot="text">
+              <img src="{{getAssetUrl('themes/'~template~'/assets/totem-3_products-services.jpg')}}">
+            </div>
+          </div>
+          <div class="c8 text" data-slot-container="1">
+            <div data-slot="text">
+              <p><strong>Toward predictive maintenance</strong></p>
+              <ul>
+                <li>FlyScan new HUMS service packages maximize your operations efficiency</li>
+                <li>Increasing both fleet availability and flight safety</li>
+                <li>Discover our New Remote Assistance solution SkyTech!</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="totem">
+          <div data-slot-container="1">
+            <div data-slot="text">
+              <h3>Totem 4: Connected Services</h3>
+            </div>
+          </div>
+          <div class="c4 img" data-slot-container="1">
+            <div data-slot="text">
+              <img src="{{getAssetUrl('themes/'~template~'/assets/totem-4_products-services.jpg')}}">
+            </div>
+          </div>
+          <div class="c8 text" data-slot-container="1">
+            <div data-slot="text">
+              <p><strong>Prepare your mission</strong></p>
+              <ul>
+                <li>Flight Planner, the Airbus Helicopters fully integrated Electronic Flight Bag, delivers an easier and safer way to manage flight preparation, including flight performance computation.</li>
+              </ul>
+              <p><strong>Manage your fleet</strong></p>
+              <ul>
+                <li>Fleet Keeper, the electronic technical logbook and Envision, the Maintenance Information System, offer digital services to support and ease maintenance operations.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="totem" data-slot-container="1">
+          <div data-slot="text">
+            <a href="#top" name="top" class="button blue">Back to Top</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer data-section-wrapper="1" id="bottom">
+  <div data-section="1">
+    <div class="container">
+      <div class="c7" data-slot-container="1">
+        <div class="social" data-slot="text">
+          <h3>Follow us @Airbus HAI</h3>
+          <a href="#"><img class src="{{getAssetUrl('themes/'~template~'/assets/icon_facebook.svg')}}"></a>
+          <a href="#"><img class src="{{getAssetUrl('themes/'~template~'/assets/icon_twitter.svg')}}"></a>
+        </div>
+        <div class="company-info" data-slot-container="1">
+          <div data-slot="text">
+            <p class="copyright">&copy; Airbus 2017</p>
+            <a href="http://www.airbus.com/terms-of-use.html">Terms and Conditions</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script type="text/javascript">
+  function scrollTo(hash) {
+      location.hash = "#" + hash;
+  }
+</script>
+{% endblock %}

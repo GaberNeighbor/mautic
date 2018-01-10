@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% if page is defined %}
+        <title>{pagetitle}</title>
+        <meta name="description" content="{pagemetadescription}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ getAssetUrl('themes/'~template~'/css/style.css')}}" type="text/css">
+        <link rel="shortcut icon" href="{{getAssetUrl('themes/'~template~'/assets/favicon.ico')}}" type="image/x-icon">
+        <link rel="icon" href="{{getAssetUrl('themes/'~template~'/assets/favicon.ico')}}" type="image/x-icon">
+        {% endif %}
+    </head>
+    <body id="external">
+        {{ outputScripts('bodyOpen') }}
+        {% block content %}{% endblock %}
+        {{ outputScripts('bodyClose') }}
+    </body>
+</html>

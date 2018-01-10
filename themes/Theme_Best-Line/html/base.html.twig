@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% if page is defined %}
+        <title>{pagetitle}</title>
+        <meta name="description" content="{pagemetadescription}">
+        <meta charset="UTF-8">
+        {% endif %}
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Best Line Equipment, Rental, Sales, Service, Parts">
+        <meta name="keywords" content="Bestline, Best Line Equipment, Dealership, Dealer, for Sale, New, Philadelphia, Allentown, Harrisburg, Pittsburgh, Muncy, Pennsylvania, PA, Generator, Maxi-Heat, Allmand">
+        <meta name="author" content="Attic Door Studios">
+        <link rel="shortcut icon" href="{{ getAssetUrl('themes/'~template~'/assets/favicon.ico')}}">
+
+        <!-- Bootstrap core CSS -->
+        <link href="{{ getAssetUrl('themes/'~template~'/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+
+        <!-- Custom fonts for this template -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">  
+
+        <!-- Custom styles for this template -->
+        <link rel="stylesheet" href="{{ getAssetUrl('themes/'~template~'/css/styles.css')}}" type="text/css">
+    </head>
+    <body id="bodyTag">
+        {{ outputScripts('bodyOpen') }}
+        {% block content %}{% endblock %}
+        {{ outputScripts('bodyClose') }}
+        <script src="{{ getAssetUrl('themes/'~template~'/vendor/jquery/jquery.min.js')}}"></script>
+    </body>
+</html>

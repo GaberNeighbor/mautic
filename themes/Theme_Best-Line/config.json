@@ -1,0 +1,9 @@
+{
+  "name": "Best Line",
+  "author": "Mautic",
+  "authorUrl": "http://www.mautic.com",
+  "features": [
+  	"email",
+  	"page"
+  ]
+}
